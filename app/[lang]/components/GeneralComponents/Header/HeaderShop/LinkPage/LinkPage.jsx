@@ -34,6 +34,7 @@ const LinkPage = ({
                             : styles.inactiveLink
                     }`}
                     onClick={() => onLinkClick()}
+                    passHref
                 >
                     <div className={styles.icon}>{icon}</div>
                     <p className={styles.menu__text}>
@@ -49,6 +50,7 @@ const LinkPage = ({
                             : styles.inactiveLink
                     }`}
                     onClick={() => onLinkClick()}
+                    passHref
                 >
                     <div className={styles.icon}>{icon}</div>
                     <p className={styles.menu__text}>
