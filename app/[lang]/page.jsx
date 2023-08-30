@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Locale } from "../../i18n-config";
