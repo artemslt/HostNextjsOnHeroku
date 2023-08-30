@@ -1,6 +1,7 @@
 import { i18n } from "../../i18n-config";
 import { Inter } from "next/font/google";
 import { getDictionary } from "../../get-dictionary";
+import Link from "next/link";
 import Header from "./components/GeneralComponents/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ReduxProvider from "../../redux/provider";
