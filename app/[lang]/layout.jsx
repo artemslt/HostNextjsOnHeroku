@@ -49,6 +49,9 @@ export default async function RootLayout({ children, params }) {
                         <Link href="/catalog">
                             <a>Catalog</a>
                         </Link>
+                        <Link href="/samepage">
+                            <a>samepage</a>
+                        </Link>
                         <br />
                     </div>
                     <main style={{ flex: 1 }}>{children}</main>
