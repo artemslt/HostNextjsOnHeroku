@@ -46,12 +46,12 @@ const HomePage = () => {
                 <div className={`${styles.home__team}`}>
                     <div className={styles.home__teamPhoto}></div>
                     <p className={` ${styles.home__text} text`}>
-                        {dictionary?.homePage.textSecondParagraph}
+                        bla bla bla bla
                     </p>
                 </div>
                 <Link href={`/${lang}/catalog`} className={styles.home__link}>
                     <button className={`${styles.home__button__mobile} button`}>
-                        {dictionary?.buttons.goToCatalog}
+                        bla bla bla
                     </button>
                 </Link>
             </div>
