@@ -7,23 +7,18 @@ import FooterNavMenu from "../Footer/FooterNavMenu/FooterNavMenu";
 import styles from "./Footer.module.scss";
 import { useLang } from "@/hooks/useLang";
 
-const Footer = ({ dictionary: { footer } }) => {
+const Footer = ({ dictionary: { footer }, params: { lang } }) => {
     const currentYear = new Date().getFullYear();
-    const lang = useLang();
 
     return (
         <footer className={styles.section}>
             <div className="container">
                 <div className={styles.wrapper}>
                     <div className={styles.sections__wrapper}>
-                        <div className={styles.logo}>
-                            <FooterLogo />
-                        </div>
-                        <FooterNavMenu />
-                        <FooterContacts />
+                        <div className={styles.logo}></div>
+
                         <div>
                             <p className={styles.title}>{footer.followUs}</p>
-                            <SocialMedia />
                         </div>
                     </div>
                     <div className={styles.copyright}>

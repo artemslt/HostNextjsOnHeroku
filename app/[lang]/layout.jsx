@@ -41,7 +41,7 @@ export default async function RootLayout({ children, params }) {
                         <Link href="/samepage">same page</Link>
                         <Header dictionary={dictionary} />
                         <main style={{ flex: 1 }}>{children}</main>
-                        <Footer dictionary={dictionary} />
+
                         <CookiesBanner />
                     </ReduxProvider>
                 </AuthProvider>
