@@ -1,3 +1,4 @@
+"use client";
 import BankDetailsSection from "../../components/CharityInfo/BankDetailsSection";
 import TextSection from "../../components/CharityInfo/TextSection/TextSection";
 import { useLang } from "@/hooks/useLang";
