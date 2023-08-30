@@ -6,8 +6,7 @@ import { useDictionary } from "@/hooks/useDictionary";
 import Loader from "../../components/GeneralComponents/Loader/Loader";
 import styles from "./charity.module.scss";
 
-const CharityPage = () => {
-    const lang = useLang();
+const CharityPage = ({ params: { lang } }) => {
     const dictionary = useDictionary(lang);
 
     return (

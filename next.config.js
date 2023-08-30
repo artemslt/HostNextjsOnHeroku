@@ -22,6 +22,11 @@ const nextConfig = {
         NEXT_PUBLIC_TELEGRAM_CHAT_ID: process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID,
         NEXT_PUBLIC_TELEGRAM_URL_API: process.env.NEXT_PUBLIC_TELEGRAM_URL_API,
     },
+    i18n: {
+        locales: ["uk", "en"],
+        defaultLocale: "uk",
+        localeDetection: false,
+    },
 };
 
 module.exports = nextConfig;
