@@ -1,7 +1,6 @@
 import { i18n } from "../../i18n-config";
 import { Inter } from "next/font/google";
 import { getDictionary } from "../../get-dictionary";
-import Link from "next/link";
 import Header from "./components/GeneralComponents/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ReduxProvider from "../../redux/provider";
@@ -38,9 +37,6 @@ export default async function RootLayout({ children, params }) {
             <body className={inter.className}>
                 <AuthProvider>
                     <ReduxProvider>
-                        <Link href="/samepage">
-                            <a>samepage</a>
-                        </Link>
                         <Header dictionary={dictionary} />
                         <main style={{ flex: 1 }}>{children}</main>
                         <Footer dictionary={dictionary} />
