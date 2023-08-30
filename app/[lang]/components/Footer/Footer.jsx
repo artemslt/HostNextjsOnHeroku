@@ -1,11 +1,6 @@
-"use client";
 import Link from "next/link";
-import SocialMedia from "../GeneralComponents/SocialMediaLinks/SocialMediaLinks";
-import FooterContacts from "./FooterContacts/FooterContactsList";
-import FooterLogo from "./FooterLogo/FooterLogo";
-import FooterNavMenu from "../Footer/FooterNavMenu/FooterNavMenu";
+
 import styles from "./Footer.module.scss";
-import { useLang } from "@/hooks/useLang";
 
 const Footer = ({ dictionary: { footer }, params: { lang } }) => {
     const currentYear = new Date().getFullYear();
@@ -16,7 +11,11 @@ const Footer = ({ dictionary: { footer }, params: { lang } }) => {
                 <div className={styles.wrapper}>
                     <div className={styles.sections__wrapper}>
                         <div className={styles.logo}></div>
-
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Aperiam velit facilis ea reprehenderit nam
+                        blanditiis similique inventore commodi corporis odit
+                        perferendis optio delectus, asperiores voluptatibus
+                        libero fugit placeat voluptatum harum?
                         <div>
                             <p className={styles.title}>{footer.followUs}</p>
                         </div>
