@@ -27,7 +27,7 @@ const HomePage = () => {
                                 bla bla bla
                             </p>
                             <Link
-                                href={`/${lang}/catalog`}
+                                href={`/catalog`}
                                 className={styles.home__link}
                             >
                                 <button
