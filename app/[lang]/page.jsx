@@ -7,7 +7,7 @@ import styles from "./page.module.scss";
 import "./components/GeneralComponents/ProductCardsSlider/Slider.scss";
 
 const HomePage = () => {
-    const lang = useLang();
+    // const lang = useLang();
 
     return (
         <section className={`${styles.home} section`}>
@@ -25,7 +25,7 @@ const HomePage = () => {
                                 bla bla bla
                             </p>
                             <Link
-                                href={`/${lang}/catalog`}
+                                href={`/catalog`}
                                 className={styles.home__link}
                             >
                                 <button
@@ -45,7 +45,7 @@ const HomePage = () => {
                         bla bla bla bla
                     </p>
                 </div>
-                <Link href={`/${lang}/catalog`} className={styles.home__link}>
+                <Link href={`/catalog`} className={styles.home__link}>
                     <button className={`${styles.home__button__mobile} button`}>
                         bla bla bla
                     </button>
