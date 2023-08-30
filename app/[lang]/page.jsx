@@ -11,71 +11,36 @@ import styles from "./page.module.scss";
 import "./components/GeneralComponents/ProductCardsSlider/Slider.scss";
 
 const HomePage = () => {
-    const lang = useLang();
-    const dictionary = useDictionary(lang);
-
-    const [isNotificationShown, setIsNotificationShown] = useState(false);
-
     return (
-        <>
-            {!dictionary ? (
-                <Loader />
-            ) : (
-                <section className={`${styles.home} section`}>
-                    <div className="container">
-                        <div className={`${styles.hero}`}>
-                            <div className={` ${styles.home__container}`}>
-                                <div className={styles.home__image}>
-                                    <h1 className={`${styles.home__title}`}>
-                                        {dictionary?.homePage.title}
-                                    </h1>
-                                </div>
-                                <div className={styles.home__about}>
-                                    <h2
-                                        className={`${styles.home__seconderyTitle} `}
-                                    >
-                                        {dictionary?.homePage.titleAboutUs}
-                                    </h2>
-                                    <p
-                                        className={`${styles.home__aboutText}  text`}
-                                    >
-                                        {dictionary?.homePage.text}
-                                    </p>
-                                    <Link
-                                        href={`/${lang}/catalog`}
-                                        className={styles.home__link}
-                                    >
-                                        <button
-                                            className={`${styles.home__button__tabletAndDesktop} button`}
-                                        >
-                                            {dictionary?.buttons.goToCatalog}
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
+        <section className={`${styles.home} section`}>
+            <div className="container">
+                <div className={`${styles.hero}`}>
+                    <div className={` ${styles.home__container}`}>
+                        <div className={styles.home__image}>
+                            <h1 className={`${styles.home__title}`}>bla</h1>
                         </div>
-                    </div>
-                    <div className={`container ${styles.wrapper}`}>
-                        <div className={`${styles.home__team}`}>
-                            <div className={styles.home__teamPhoto}></div>
-                            <p className={` ${styles.home__text} text`}>
-                                {dictionary?.homePage.textSecondParagraph}
+                        <div className={styles.home__about}>
+                            <h2 className={`${styles.home__seconderyTitle} `}>
+                                bla bla
+                            </h2>
+                            <p className={`${styles.home__aboutText}  text`}>
+                                bla bla bla
                             </p>
-                        </div>
-                        <Link
-                            href={`/${lang}/catalog`}
-                            className={styles.home__link}
-                        >
-                            <button
-                                className={`${styles.home__button__mobile} button`}
+                            <Link
+                                href={`/${lang}/catalog`}
+                                className={styles.home__link}
                             >
-                                {dictionary?.buttons.goToCatalog}
-                            </button>
-                        </Link>
+                                <button
+                                    className={`${styles.home__button__tabletAndDesktop} button`}
+                                >
+                                    buttom bla
+                                </button>
+                            </Link>
+                        </div>
                     </div>
-                </section>
-            )}
-        </>
+                </div>
+            </div>
+        </section>
     );
 };
 export default HomePage;
