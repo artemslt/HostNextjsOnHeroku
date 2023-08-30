@@ -37,6 +37,7 @@ export default async function RootLayout({ children, params }) {
             <body className={inter.className}>
                 <AuthProvider>
                     <ReduxProvider>
+                        <Link href="/samepage">same page</Link>
                         <Header dictionary={dictionary} />
                         <main style={{ flex: 1 }}>{children}</main>
                         <Footer dictionary={dictionary} />
