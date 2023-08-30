@@ -13,29 +13,8 @@ import "./components/GeneralComponents/ProductCardsSlider/Slider.scss";
 const HomePage = () => {
     const lang = useLang();
     const dictionary = useDictionary(lang);
-    const [isLoading, setIsLoading] = useState(false);
-    const [newProducts, setNewProducts] = useState(null);
+
     const [isNotificationShown, setIsNotificationShown] = useState(false);
-
-    useEffect(() => {
-        const products = async lang => {
-            setIsLoading(true);
-
-            try {
-                const response = await fetchProducts(lang);
-                const activeProducts = response.data.filter(
-                    product => product.isAvailable
-                );
-                const shownProducts = activeProducts.slice(0, 6);
-                setIsLoading(false);
-                setNewProducts(shownProducts);
-            } catch (error) {
-                setIsLoading(false);
-                return error;
-            }
-        };
-        products(lang);
-    }, [lang]);
 
     return (
         <>
@@ -93,21 +72,6 @@ const HomePage = () => {
                                 {dictionary?.buttons.goToCatalog}
                             </button>
                         </Link>
-
-                        <ProductCardsSlider
-                            slick__slider={styles.home__slider}
-                            dictionary={dictionary}
-                            title={dictionary?.homePage.titleNew}
-                            products={newProducts}
-                            isLoading={isLoading}
-                            setIsNotificationShown={setIsNotificationShown}
-                        />
-
-                        {isNotificationShown && (
-                            <div className={`notification`}>
-                                {dictionary?.notifications.addedToCart}
-                            </div>
-                        )}
                     </div>
                 </section>
             )}
