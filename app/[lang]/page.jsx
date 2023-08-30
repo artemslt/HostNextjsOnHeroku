@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { Locale } from "../../i18n-config";
-import { useDictionary } from "../../hooks/useDictionary";
-import { fetchProducts } from "../../services/api";
+
 import { useLang } from "../../hooks/useLang";
-import ProductCardsSlider from "./components/GeneralComponents/ProductCardsSlider/ProductCardsSlider";
-import Loader from "./components/GeneralComponents/Loader/Loader";
+
 import styles from "./page.module.scss";
 import "./components/GeneralComponents/ProductCardsSlider/Slider.scss";
 
