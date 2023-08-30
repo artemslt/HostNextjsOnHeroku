@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "./Footer.module.scss";
 
-const Footer = ({ dictionary: { footer }, params: { lang } }) => {
+const Footer = ({ dictionary: { footer } }) => {
     const currentYear = new Date().getFullYear();
 
     return (
@@ -28,7 +28,7 @@ const Footer = ({ dictionary: { footer }, params: { lang } }) => {
                                     {footer.team}
                                     <span className={styles.space}>&nbsp;</span>
                                 </p>
-                                <Link href={`/${lang}/dreamteam`}>
+                                <Link href={`/dreamteam`}>
                                     {footer.teamLink}
                                     <span className={styles.space}>&nbsp;</span>
                                 </Link>
